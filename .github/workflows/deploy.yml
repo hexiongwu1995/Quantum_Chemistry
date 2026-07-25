@@ -5,9 +5,12 @@ on:
     branches:
       - main
     paths: 
+      - '.github/workflows/deploy.yml'
       - 'iconfont/**'
       - 'template/**'
-      - '.github/workflows/deploy.yml'
+      - '电磁波/**'
+      - '量子化学历史起源/**'
+
 
 jobs:
   deploy:
