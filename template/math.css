@@ -17,9 +17,9 @@
         
         @media screen and (max-width: 600px) {
             span.math {
-                font-size: 0.8rem;
+                font-size: 1rem;
             }
             div.math {
-                font-size: 0.8rem;
+                font-size: 1rem;
             }
         }
