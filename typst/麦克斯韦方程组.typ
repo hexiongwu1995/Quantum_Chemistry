@@ -21,19 +21,19 @@
 
 数学描述：闭合回路上的电动势等于这个回路上的磁通量随时间的变化速率。
 
-$ epsilon = - (d Phi_B)/(d t) = - d/(d t) integral.cont vec(B) dot d vec(S) $
+$ epsilon = - (d Phi_B)/(d t) = - d/(d t) integral.cont arrow(B) dot d arrow(S) $
 
 === 微分形式
 
 数学描述：
 
-$ nabla times vec(E) = - (partial vec(B))/(partial t) $
+$ nabla times arrow(E) = - (partial arrow(B))/(partial t) $
 
 == 感应电动势的定义
 
 闭合回路上的感应电动势的物理定义为：电场强度沿闭合回路的线积分。
 
-$ epsilon = integral.cont vec(E) dot d vec(l) $
+$ epsilon = integral.cont arrow(E) dot d arrow(l) $
 
 = 保守场与非保守场
 
@@ -41,19 +41,19 @@ $ epsilon = integral.cont vec(E) dot d vec(l) $
 
 == 保守场的定义与性质
 
-保守场是指满足以下条件的矢量场：场沿任意闭合路径的环积分等于零。用数学语言表述，对于矢量场 $vec(F)$，如果满足：
+保守场是指满足以下条件的矢量场：场沿任意闭合路径的环积分等于零。用数学语言表述，对于矢量场 $arrow(F)$，如果满足：
 
-$ integral.cont vec(F) dot d vec(l) = 0 $
+$ integral.cont arrow(F) dot d arrow(l) = 0 $
 
-则称 $vec(F)$ 为保守场。保守场具有以下重要性质：
+则称 $arrow(F)$ 为保守场。保守场具有以下重要性质：
 
 首先，保守场的线积分与路径无关，只取决于起点和终点的位置。这意味着对于从点A到点B的任意两条路径 $C_1$ 和 $C_2$，都有：
 
-$ integral_(C_1) vec(F) dot d vec(l) = integral_(C_2) vec(F) dot d vec(l) $
+$ integral_(C_1) arrow(F) dot d arrow(l) = integral_(C_2) arrow(F) dot d arrow(l) $
 
 其次，保守场可以表示为某个标量势函数的梯度。即存在一个标量函数 $phi$，使得：
 
-$ vec(F) =  -nabla phi $
+$ arrow(F) =  -nabla phi $
 
 这个性质使得保守场的分析大大简化，因为只需要研究一个标量函数而非矢量函数。
 
@@ -61,15 +61,15 @@ $ vec(F) =  -nabla phi $
 
 静电场是由静止电荷产生的电场，它是保守场的典型例子。静电场满足以下基本方程：
 
-$ integral.cont vec(E) dot d vec(l) = 0 $
+$ integral.cont arrow(E) dot d arrow(l) = 0 $
 
 这表明在静电场中，电荷沿任意闭合路径移动一周，电场力做功为零。因此，静电场可以引入电势的概念：
 
-$ vec(E) = -nabla V $
+$ arrow(E) = -nabla V $
 
 其中 $V$ 是电势。两点之间的电势差定义为：
 
-$ V_B - V_A = -integral_A^B vec(E) dot d vec(l) $
+$ V_B - V_A = -integral_A^B arrow(E) dot d arrow(l) $
 
 由于静电场是保守场，电荷在静电场中的运动遵循能量守恒定律，这为我们分析电路和电荷运动提供了理论基础。
 
@@ -77,7 +77,7 @@ $ V_B - V_A = -integral_A^B vec(E) dot d vec(l) $
 
 非保守场是指不满足保守场条件的矢量场，即场沿某些闭合路径的环积分不等于零：
 
-$ integral.cont vec(F) dot d vec(l) != 0 $
+$ integral.cont arrow(F) dot d arrow(l) != 0 $
 
 非保守场的主要特征包括：线积分与路径有关，不能定义全局的势函数，场具有涡旋性质。在电磁学中，非保守场通常与变化的磁场相关。
 
@@ -85,11 +85,11 @@ $ integral.cont vec(F) dot d vec(l) != 0 $
 
 当磁场随时间变化时，会激发感应电场（也称涡旋电场）。这种电场与静电场有本质区别，它是非保守场。根据法拉第电磁感应定律的微分形式：
 
-$ nabla times vec(E) = -(partial vec(B))/(partial t) $
+$ nabla times arrow(E) = -(partial arrow(B))/(partial t) $
 
 对等式两边在曲面 $S$ 上积分，并应用斯托克斯定理，得到积分形式：
 
-$ integral.cont vec(E) dot d vec(l) = -(partial)/(partial t) integral vec(B) dot d vec(S) = -(d Phi_B)/(d t) $
+$ integral.cont arrow(E) dot d arrow(l) = -(partial)/(partial t) integral arrow(B) dot d arrow(S) = -(d Phi_B)/(d t) $
 
 这个结果表明，感应电场沿闭合回路的环积分等于穿过该回路的磁通量变化率的负值。只要磁通量发生变化，环积分就不为零，这正是非保守场的定义。
 
@@ -97,9 +97,9 @@ $ integral.cont vec(E) dot d vec(l) = -(partial)/(partial t) integral vec(B) dot
 
 静电场和感应电场虽然都称为电场，但它们的性质截然不同：
 
-从场的源来看，静电场由电荷激发，满足 $nabla dot vec(E) = rho/epsilon_0$；感应电场由变化磁场激发，满足 $nabla dot vec(E) = 0$，即感应电场是无源场。
+从场的源来看，静电场由电荷激发，满足 $nabla dot arrow(E) = rho/epsilon_0$；感应电场由变化磁场激发，满足 $nabla dot arrow(E) = 0$，即感应电场是无源场。
 
-从场的旋度来看，静电场无旋，$nabla times vec(E) = 0$；感应电场有旋，$nabla times vec(E) = -(partial vec(B))/(partial t)$。
+从场的旋度来看，静电场无旋，$nabla times arrow(E) = 0$；感应电场有旋，$nabla times arrow(E) = -(partial arrow(B))/(partial t)$。
 
 从做功性质来看，静电场中电场力做功与路径无关，可以定义电势能；感应电场中电场力做功与路径有关，不能定义全局的电势函数。
 
