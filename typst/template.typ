@@ -38,7 +38,7 @@
   set page(
     // paper: "a4",
     width: 100mm,
-    height: 200mm,
+    height: 180mm,
     margin: 5mm,
     numbering: "1/1",
     number-align: center,

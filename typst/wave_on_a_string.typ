@@ -55,7 +55,8 @@
 #figure(caption: [弦上波的示意图])[
 
   #align(center)[
-    #cetz.canvas({
+    #scale(75%)[
+    #cetz.canvas(length:0.8cm,{
       import cetz.draw: *
       // 弦静止时的状态
       line((0, 0), (L, 0), stroke: (paint: gray, thickness: 2pt))
@@ -145,7 +146,7 @@
       })
       rect((-0.1, -H / 2), (0.1, H / 2), fill: gradient.linear(gray, white))
       rect((L - 0.1, -H / 2), (L + 0.1, H / 2), fill: gradient.linear(gray, white))
-    })]
+    })]]
 ]<Schematic_Diagram_of_wave_on_a_string>
 
 
@@ -271,7 +272,7 @@ $ cases(y(L_0, t) = X(L_0)T(t) =0, T(t) "为非零解") #h(1cm) arrow.r.double.l
 
 
 #{
-  set text(size: 0.8em)
+  set text(size: 0.7em)
 
   table(
     columns: 5,
