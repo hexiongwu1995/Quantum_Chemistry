@@ -5,3 +5,16 @@ div.highlight {
   margin: 30px 0;
   border-radius: 0 4px 4px 0;
 }
+
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+}
+
+table th,
+table td {
+    border: 1px solid;
+  padding: 8px;
+}

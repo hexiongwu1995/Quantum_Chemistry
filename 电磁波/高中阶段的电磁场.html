@@ -147,7 +147,7 @@
 
             <h3>电源和电流</h3>
             <p>电源是能把电子从正极搬运到负极的装置，其作用是维持电路两端的电势差，使电路中形成持续的电流。</p>
-            <p>电流是描述电流强弱的物理量，定义为通过导体横截面的电荷量与通过这些电荷量所用时间的比值：</p>
+            <p>电流强度是描述电流强弱的物理量，定义为通过导体横截面的电荷量与通过这些电荷量所用时间的比值：</p>
             <div class="math">`I = Q/t`</div>
             <p>电流的单位是安培，符号为 <span class="math">`A`</span>。电流是标量，但有方向，规定正电荷定向移动的方向为电流的方向。</p>
             <p>电流的微观表达式为：</p>
@@ -210,53 +210,90 @@
                     class="math">`I`</span> 为横轴作图，得到一条直线。直线的纵截距等于电动势 <span class="math">`E`</span>，斜率的绝对值等于内阻 <span
                     class="math">`r`</span>。</p>
 
-            <h2>电磁感应与电磁波初步</h2>
+            <div class="highlight">
+                <h2>电磁感应与电磁波初步</h2>
 
-            <h3>磁场 磁感线</h3>
-            <p>磁场是存在于磁体和电流周围的一种特殊物质，它对放入其中的磁体或电流有力的作用。磁场是传递磁相互作用的媒介。</p>
-            <p>磁感线是用来形象描述磁场的假想曲线。磁感线的疏密表示磁场的强弱，磁感线上某点的切线方向表示该点的磁场方向。</p>
-            <p>磁感线的特点：（1）磁感线是闭合曲线，在磁体外部从N极指向S极，在磁体内部从S极指向N极；（2）磁感线不相交；（3）磁感线的疏密表示磁场的强弱。</p>
+                <h3>磁场 磁感线</h3>
+                <p>磁场是存在于磁体和电流周围的一种特殊物质，它对放入其中的磁体或电流有力的作用。磁场是传递磁相互作用的媒介。。。。。。。。。。。。。。。。。。。。。。</p>
+                <p>磁感线是用来形象描述磁场的假想曲线。磁感线的疏密表示磁场的强弱，磁感线上某点的切线方向表示该点的磁场方向。</p>
+                <p>磁感线的特点：（1）磁感线是闭合曲线，在磁体外部从N极指向S极，在磁体内部从S极指向N极；（2）磁感线不相交；（3）磁感线的疏密表示磁场的强弱。</p>
 
-            <h3>磁感应强度 磁通量</h3>
-            <p>磁感应强度是描述磁场强弱和方向的物理量，用 <span class="math">`B`</span> 表示。磁感应强度的方向规定为小磁针静止时N极所指的方向。</p>
-            <p>磁感应强度的单位是特斯拉，符号为 <span class="math">`T`</span>。</p>
-            <p>通电导线在磁场中受到的安培力与电流、导线长度和磁场方向有关。当导线与磁场方向垂直时，安培力为：</p>
-            <div class="math">`F = B I L`</div>
-            <p>由此可以定义磁感应强度：</p>
-            <div class="math">`B = F/(I L)`</div>
-            <p>磁通量是描述穿过某一面积的磁感线条数的物理量，定义为磁感应强度与垂直于磁场方向的面积的乘积：</p>
-            <div class="math">`Phi = B S`</div>
-            <p>当平面与磁场方向不垂直时，磁通量为：</p>
-            <div class="math">`Phi = B S cos theta = vec B * vec S`</div>
-            <p>其中 <span class="math">`theta`</span> 是磁场方向与平面法线方向的夹角。磁通量的单位是韦伯，符号为 <span class="math">`Wb`</span>，<span
-                    class="math">`1 Wb = 1 T·m^2`</span>。</p>
+                <h3>磁感应强度 磁通量</h3>
+                <p>磁感应强度是描述磁场强弱和方向的物理量，用 <span class="math">`B`</span> 表示。磁感应强度的方向规定为小磁针静止时N极所指的方向。</p>
+                <p>磁感应强度的单位是特斯拉，符号为 <span class="math">`T`</span>。</p>
+                <p>通电导线在磁场中受到的安培力与电流、导线长度和磁场方向有关。当导线与磁场方向垂直时，安培力为：</p>
+                <div class="math">`F = B I L`</div>
+                <p>由此可以定义磁感应强度：</p>
+                <div class="math">`B = F/(I L)`</div>
+                <p>磁通量是描述穿过某一面积的磁感线条数的物理量，定义为磁感应强度与垂直于磁场方向的面积的乘积：</p>
+                <div class="math">`Phi = B S`</div>
+                <p>当平面与磁场方向不垂直时，磁通量为：</p>
+                <div class="math">`Phi = B S cos theta = vec B * vec S`</div>
+                <p>其中 <span class="math">`theta`</span> 是磁场方向与平面法线方向的夹角。磁通量的单位是韦伯，符号为 <span
+                        class="math">`Wb`</span>，<span class="math">`1 Wb = 1 T·m^2`</span>。</p>
 
-            <h3>电磁感应现象及应用</h3>
-            <p>1831年，法拉第发现了电磁感应现象：当穿过闭合电路的磁通量发生变化时，电路中就会产生感应电流。</p>
-            <p>产生感应电流的条件：（1）电路必须闭合；（2）穿过电路的磁通量必须发生变化。</p>
-            <p>引起磁通量变化的方式有三种：（1）磁感应强度 <span class="math">`B`</span> 变化；（2）回路面积 <span class="math">`S`</span>
-                变化；（3）磁场与回路平面的夹角 <span class="math">`theta`</span> 变化。</p>
+                <h4>磁场强度与磁感应强度的对比</h4>
+                <p>在电磁学中，除了磁感应强度 <span class="math">`vec B`</span> 外，还引入磁场强度 <span class="math">`vec H`</span> 来描述磁场。这两个物理量既有联系又有区别：</p>
+                <p><strong>磁感应强度 <span class="math">`vec B`</span></strong>：描述磁场对运动电荷或电流的作用力，是表征磁场<strong>力学效应</strong>的物理量。其定义式为：</p>
+                <div class="math">`vec F = I vec L xx vec B`</div>
+                <p>其中 <span class="math">`vec F`</span> 是安培力，<span class="math">`I`</span> 是电流，<span class="math">`vec L`</span> 是导线长度矢量（方向与电流相同）。当导线与磁场垂直时，力的大小为 <span class="math">`F = BIL`</span>。</p>
+                <p><strong>磁场强度 <span class="math">`vec H`</span></strong>：描述磁场源的强弱，是表征磁场<strong>源特性</strong>的物理量。在真空中，磁场强度与磁感应强度的关系为：</p>
+                <div class="math">`vec B = mu_0 vec H`</div>
+                <p>其中 <span class="math">`mu_0 = 4pi xx 10^(-7) H//m`</span> 是真空磁导率。磁场强度的单位是安培每米，符号为 <span class="math">`A//m`</span>。</p>
+                <p>在磁介质中，两者的关系为：</p>
+                <div class="math">`vec B = mu_0 (vec H + vec M)`</div>
+                <p>其中 <span class="math">`vec M`</span> 是磁化强度，表示介质被磁化的程度。也可以写成：</p>
+                <div class="math">`vec B = mu vec H = mu_0 mu_r vec H`</div>
+                <p>其中 <span class="math">`mu`</span> 是介质的磁导率，<span class="math">`mu_r`</span> 是相对磁导率。</p>
+                <p><strong>对比总结</strong>：</p>
+                <table>
+                    <tr style="background-color: #f0f0f0;">
+                        <th>物理量</th>
+                        <th>符号</th>
+                        <th>单位</th>
+                        <th>物理意义</th>
+                    </tr>
+                    <tr>
+                        <td>磁感应强度</td>
+                        <td><span class="math">`vec B`</span></td>
+                        <td>特斯拉 (T)</td>
+                        <td>描述磁场的力学效应</td>
+                    </tr>
+                    <tr>
+                        <td>磁场强度</td>
+                        <td><span class="math">`vec H`</span></td>
+                        <td>安培/米 (A/m)</td>
+                        <td>描述磁场源的特性</td>
+                    </tr>
+                </table>
+                <p>在高中物理中，通常只使用磁感应强度 <span class="math">`vec B`</span> 来描述磁场。这是因为 <span class="math">`vec B`</span> 直接反映了磁场对电流的作用力，更便于理解和测量。而在研究磁介质中的磁场时，引入 <span class="math">`vec H`</span> 可以使问题的处理更加简便，因为 <span class="math">`vec H`</span> 的环路定理与介质无关。</p>
 
-            <h3>电磁波的发现及应用</h3>
-            <p>麦克斯韦在总结电磁现象规律的基础上，建立了完整的电磁场理论，并预言了电磁波的存在。麦克斯韦理论的两个基本假设是：（1）变化的磁场产生电场；（2）变化的电场产生磁场。</p>
-            <p>1888年，赫兹通过实验证实了电磁波的存在。</p>
-            <p>电磁波是横波，电场强度 <span class="math">`vec E`</span> 和磁感应强度 <span class="math">`vec B`</span>
-                相互垂直，且都垂直于传播方向。电磁波在真空中的传播速度为：</p>
-            <div class="math">`c = 3.00 xx 10^8 m/s`</div>
-            <p>电磁波的波长 <span class="math">`lambda`</span>、频率 <span class="math">`f`</span> 和波速 <span
-                    class="math">`c`</span> 之间的关系为：</p>
-            <div class="math">`c = lambda f`</div>
-            <p>电磁波谱按波长从长到短（频率从低到高）依次为：无线电波、红外线、可见光、紫外线、X射线、γ射线。</p>
+                <h3>电磁感应现象及应用</h3>
+                <p>1831年，法拉第发现了电磁感应现象：当穿过闭合电路的磁通量发生变化时，电路中就会产生感应电流。</p>
+                <p>产生感应电流的条件：（1）电路必须闭合；（2）穿过电路的磁通量必须发生变化。</p>
+                <p>引起磁通量变化的方式有三种：（1）磁感应强度 <span class="math">`B`</span> 变化；（2）回路面积 <span class="math">`S`</span>
+                    变化；（3）磁场与回路平面的夹角 <span class="math">`theta`</span> 变化。</p>
 
-            <h3>能量量子化</h3>
-            <p>1900年，普朗克为了解释黑体辐射规律，提出了能量量子化假说：振子的能量只能取某些分立值，是最小能量单元的整数倍。</p>
-            <div class="math">`E = n h f`</div>
-            <p>其中 <span class="math">`n = 0, 1, 2, 3, ...`</span>，<span class="math">`h`</span> 是普朗克常量，<span
-                    class="math">`h = 6.63 xx 10^(-34) J·s`</span>。</p>
-            <p>1905年，爱因斯坦提出了光量子假说，认为光本身就是由一个个不可分割的能量子组成的，这些能量子后来被称为光子。光子的能量为：</p>
-            <div class="math">`epsilon = h f`</div>
-            <p>这一假说成功解释了光电效应现象。</p>
+                <h3>电磁波的发现及应用</h3>
+                <p>麦克斯韦在总结电磁现象规律的基础上，建立了完整的电磁场理论，并预言了电磁波的存在。麦克斯韦理论的两个基本假设是：（1）变化的磁场产生电场；（2）变化的电场产生磁场。</p>
+                <p>1888年，赫兹通过实验证实了电磁波的存在。</p>
+                <p>电磁波是横波，电场强度 <span class="math">`vec E`</span> 和磁感应强度 <span class="math">`vec B`</span>
+                    相互垂直，且都垂直于传播方向。电磁波在真空中的传播速度为：</p>
+                <div class="math">`c = 3.00 xx 10^8 m/s`</div>
+                <p>电磁波的波长 <span class="math">`lambda`</span>、频率 <span class="math">`f`</span> 和波速 <span
+                        class="math">`c`</span> 之间的关系为：</p>
+                <div class="math">`c = lambda f`</div>
+                <p>电磁波谱按波长从长到短（频率从低到高）依次为：无线电波、红外线、可见光、紫外线、X射线、γ射线。</p>
 
+                <h3>能量量子化</h3>
+                <p>1900年，普朗克为了解释黑体辐射规律，提出了能量量子化假说：振子的能量只能取某些分立值，是最小能量单元的整数倍。</p>
+                <div class="math">`E = n h f`</div>
+                <p>其中 <span class="math">`n = 0, 1, 2, 3, ...`</span>，<span class="math">`h`</span> 是普朗克常量，<span
+                        class="math">`h = 6.63 xx 10^(-34) J·s`</span>，<span class="math">`f`</span> 是电磁波的频率。</p>
+                <p>1905年，爱因斯坦提出了光量子假说，认为光本身就是由一个个不可分割的能量子组成的，这些能量子后来被称为光子。光子的能量为：</p>
+                <div class="math">`epsilon = h f`</div>
+                <p>这一假说成功解释了光电效应现象。</p>
+            </div>
             <h2>总结</h2>
             <p>高中电磁学内容从静电场开始，逐步过渡到恒定电流、磁场，最后以电磁感应和电磁波结束，形成了一个完整的知识体系。这一体系的核心是场的概念，学生需要理解电场和磁场作为物质存在的形式，以及它们对电荷和电流的作用规律。同时，能量观点贯穿始终，从电势能、电势到电能转化，再到电磁波的能量传播，体现了物理学中能量守恒这一基本规律的重要性。
             </p>
