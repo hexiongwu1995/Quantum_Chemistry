@@ -6,7 +6,7 @@
 #let title-page(title, author, date) = {
   align(center)[
     #v(5cm)
-    #set text(size: 20pt, weight: "bold")
+    #set text(size: 20pt, weight: "bold", fill: rgb("#0066fff0"))
     #title
     #set text(size: 12pt)
     #v(1em)
@@ -42,13 +42,6 @@
     number-align: center,
     fill: rgb("#ffffff13"),
   )
-
-  show title: it => {
-    set align(center)
-    set text(size: 18pt, weight: "bold", fill: rgb("#0066fff0"))
-    it
-    v(1em)
-  }
 
   set par(spacing: 2em, leading: 1em, justify: true)
 
@@ -110,11 +103,3 @@
   // 正文内容（必须置于最后）
   body
 }
-
-
-
-
-
-
-
-

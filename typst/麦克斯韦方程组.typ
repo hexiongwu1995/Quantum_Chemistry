@@ -4,7 +4,7 @@
 #import "@preview/gentle-clues:1.3.1": *
 
 #show: conf.with(
-  title: "高中阶段的电磁场",
+  title: "麦克斯韦方程组",
   author: "何雄武",
   date: datetime.today(),
 )
