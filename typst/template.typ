@@ -36,8 +36,10 @@
   // 文档全局设置
 
   set page(
-    paper: "a4",
-    margin: 1.5cm,
+    // paper: "a4",
+    width: 108mm,
+    height: 240mm,
+    margin: 5mm,
     numbering: "1/1",
     number-align: center,
     fill: rgb("#ffffff13"),
