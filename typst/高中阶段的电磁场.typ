@@ -1,18 +1,14 @@
-#set page(paper: "a4")
-// #set text(font: ("Noto Serif CJK SC", "Arial"))
-#set text(
-    lang: "zh",
-    font: (
-      "Cambria Math",
-      "KaiTi",
-      "DengXian",
-      "New Computer Modern Sans",
-      "Noto Sans Mono CJK SC",
-      "SimSun",
-      "Segoe UI Emoji",
-    ),
-    size: 10pt,
-  )
+
+#import "template.typ": conf
+#import "@preview/cetz:0.5.0"
+#import "@preview/gentle-clues:1.3.1": *
+
+#show: conf.with(
+  title: "电磁场",
+  author: "何雄武",
+  date: datetime.today(),
+)
+
 #let highlight-block(content) = block(
   fill: rgb("#f8f8f8"),
   inset: 10pt,
@@ -21,7 +17,7 @@
   content
 )
 
-= 高中阶段的电磁场内容介绍
+= 高中阶段的电磁场内容
 
 高中物理电磁学部分是电磁场理论的基础入门，内容涵盖静电场、恒定电流、磁场以及电磁感应等核心概念。这些内容按照从静到动、从特殊到一般的逻辑顺序展开，为学生建立起完整的电磁学知识框架。下面按照高中物理教材的讲课顺序，系统介绍各章节的主要内容。
 
